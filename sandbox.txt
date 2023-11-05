@@ -1,0 +1,37 @@
+Git commands 
+    clone -> brings an online repository to your pc
+    add -> track a file 
+    commit -> save changes
+    push -> upload to an online repository
+    pull -> download any changes made into the repository
+    status -> shows the status of the local git repository, wheter or not some changes where made
+    branch -> tells you wich branches are currently in the project
+    checkout -> switch, delete or create a branch
+    diff -> see changes between the active branch and a selected one
+    reset -> reverts changes made with add
+    log -> see history of commits
+Common usages
+
+    git add . -> adds all files in the directory
+    git add filename -> adds the target file
+
+
+    git commit -m "Title of the commit" -m "Description of the commit"
+
+    git push origin main -> uploads to github repo on main branch
+    git push -u origin main -> sets the default argument for push, next time you can just call git push
+
+    git init -> turns a folder into a git repository
+
+    git remote add origin originRepoOnGitHub -> sets the origin of a locally created repository to a repo in github
+
+    git checkout -b feature-xx -> Creates a branch 
+    git checkout feature-xx -> switches to the selected branch
+
+    git branch -d branchName -> delete a branch
+
+    git reset HEAD~1 -> Go back one commit
+
+    git reset d95a12455b71b943b095dfc4cd1df38ccbe7e477 -> goes back to the commit specified
+
+    git reset --hard d95a12455b71b943b095dfc4cd1df38ccbe7e477 -> goes back to the commit specified and deletes everithing that wasnt there originally
